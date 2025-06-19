@@ -17,11 +17,7 @@ We use types of pointers just to make our lives easier (makes the code more read
 void* ptr = NULL; // NULL is actually equal to 0
 ```
 
-note NULL is just #defined to 0
-
-
-
-
+note NULL is just #defined to 0 
 
 ```bash
 cpp-notes/pointers/pointers.cpp:17:3: error: call to 'fun' is ambiguous
