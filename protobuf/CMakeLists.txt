@@ -10,3 +10,8 @@ message(WARNING "proto libs ${Protobuf_INCLUDE_DIRS}")
 # Link the protobuf library we just created against the source libraries includes
 target_link_libraries(addressbook_proto PUBLIC ${Protobuf_LIBRARIES})
 target_include_directories(addressbook_proto PUBLIC ${Protobuf_INCLUDE_DIRS})
+
+add_executable(write-to-addressbook write-to-addressbook.cpp)
+
+target_link_libraries(write-to-addressbook addressbook_proto)
+target_include_directories(write-to-addressbook PRIVATE ${CMAKE_CURRENT_BINARY_DIR})
