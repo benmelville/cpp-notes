@@ -8,4 +8,13 @@ int main()
   std::cout << a << std::endl;
   unsigned int variable = 20;
   std::cout << variable << std::endl;
+
+  if (-1)
+  {
+    std::cout << "true" << std::endl;
+  }
+  else
+  {
+    std::cout << "false" << std::endl;
+  }
 }
